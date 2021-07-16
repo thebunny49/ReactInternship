@@ -1,0 +1,150 @@
+body{
+  margin:0;
+  padding:0;
+  
+  font-family: 'product Sans';
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+ border: 1px solid grey;
+ 
+  border-radius: 5px;
+  cursor: pointer;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+}
+
+.card-container:hover {
+  transform: scale(1.05);
+  background-color: rgb(250, 250, 250);
+}
+.card-list {
+  width: 50vw;
+  margin-left: -40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.text
+{
+  color:#097e8dfa;
+  font-size: 25px;
+  margin-top: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+
+
+.profile-card
+{
+  width: 270px;
+  height: 180px;
+  margin: 10px 10px 10px 10px;
+}
+.profile-card:hover{
+  background-color: rgb(250, 250, 250);
+}
+
+
+h1{
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.profile-content
+{
+  padding:15px;
+}
+img{
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+}
+.profile-image
+{
+  text-align: center;
+}
+.desc
+{
+  text-align: center;
+}
+.desc h2
+{
+  color: rgb(12,172,150);
+  font-size: 20px;
+  margin-top: 8px;
+}
+.desc p{
+  font-size: 16px;
+  line-height: 1.3em;
+  margin-top: 15px;
+  color: #000000;
+   
+}
+.search {
+  -webkit-appearance: none;
+  outline: none;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  width: 100%;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+@media(max-width: 600px)
+{
+    .card-container
+    {
+        width: 270px;
+        margin-left: 100px;
+        height: 200px;
+        
+    }
+    .profile-card
+    {
+        width: 250px;
+        height: 250px;
+    }
+    
+
+    .card-list
+    {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+        
+    }
+}
+@media(min-width: 600px) and ( max-width: 695px)
+{
+    .card-container
+    {
+        width: 270px;
+        margin-left: 100px;
+        height: 200px;
+        
+    }
+    .profile-card
+    {
+        width: 250px;
+        height: 250px;
+    }
+    
+
+    .card-list
+    {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-row: auto;
+      grid-gap: -50px;
+      margin-left: -180px;
+      padding: 20px;
+        
+    }
+}
